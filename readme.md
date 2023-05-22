@@ -1,9 +1,9 @@
 # Masonry Layout
 
-Contekan, hehe
+Layout Masonry adalah layout grid bertumpuk yang membuat sistem grid dengan tinggi setiap konten berbeda namun tetap rapi tanpa menisakan celah yang janggal pada setiap gridnya.
 
 ## Skill Requirement
 
 - Basic HTML
-- CSS Multiple Column
+- CSS Flexbox
 - Responsive Design 

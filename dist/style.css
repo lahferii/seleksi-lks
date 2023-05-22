@@ -5,45 +5,72 @@
   font-family: sans-serif;
 }
 
-.container {
-  width: 70%;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-.container .title {
+/* header */
+.title {
   position: sticky;
   top: 0;
   width: 100%;
   display: flex;
   background-color: white;
-  height: 50px;
+  height: 60px;
   justify-content: center;
   align-items: center;
 }
-.container .title h1 {
+.title h1 {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.5rem;
 }
+/* header */
 
+/* layout */
 .wrapper {
-  width: 100%;
-  column-count: 4;
+  overflow: hidden;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  padding-bottom: 20px;
 }
-.wrapper .box {
-  width: 100%;
-  padding: 5px 0;
+.wrapper .col1, .col2, .col3{
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.wrapper .box img {
-  width: 100%;
+.wrapper .box1 {
+  height: 100px;
+  background-color: grey;
 }
+.wrapper .box2 {
+  height: 200px;
+  background-color: grey;
+}
+.wrapper .box3 {
+  height: 300px;
+  background-color: grey;
+}
+
+/* box animation */
+.wrapper .box1:hover {
+  background-color: #025464;
+  transition: 300ms;
+}
+.wrapper .box2:hover {
+  background-color: #E57C23;
+  transition: 300ms;
+}
+.wrapper .box3:hover {
+  background-color: #7fe842;
+  transition: 300ms;
+}
+/* box animation */
+
+/* layout */
 
 @media screen and (max-width: 800px) {
-  .container {
-    width: 100%;
-    padding: 20px;
-  }
   .wrapper {
-    column-count: 1;
+    width: 100%;
+    flex-direction: column;
   }
 }
